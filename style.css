@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--almost-white: #fafafa;
+	--medium-gray: #686868;
+	--almost-black: #151515;
+}
+
+body {
+	font-family: 'Epilogue', sans-serif;
+	background-color: var(--almost-white);
+}
+
+a {
+	text-decoration: none;
+	color: var(--medium-gray);
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+.navbar-buttons {
+	color: var(--medium-gray);
+	cursor: pointer;
+}
+
+.dropdown-button {
+	font-size: 14px;
+	line-height: 1.28;
+}
+
+.login-button {
+	font-size: 14px;
+	line-height: 1.28;
+}
+.register-button {
+	font-size: 14px;
+	line-height: 1.28;
+}
+
+.menu-links {
+	font-size: 14px;
+	line-height: 1.28;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 32.07px;
+}
+
+.navbar-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 41.26px;
+	gap: 62.24px;
+}
+
+.main-menu {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 40px;
+}
+
+.logo {
+	height: 26.58px;
+	width: 83.5px;
+}
+
+.hero-img {
+	max-width: 500px;
+}
+
+.profile-access {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 40px;
+	padding-right: 40px;
+}

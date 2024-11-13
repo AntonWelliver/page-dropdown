@@ -5,6 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+			rel="stylesheet"
+		/>
 		<link
 			rel="icon"
 			type="image/png"
@@ -12,68 +18,80 @@
 			href="./images/favicon-32x32.png"
 		/>
 
+		<link rel="stylesheet" href="style.css" />
 		<title>Frontend Mentor | Intro section with dropdown navigation</title>
 	</head>
 	<body>
-		<header class="navbar">
-			<img src="images/logo.svg" alt="snap logo" />
-			<div class="main-menu">
-				<div>
-					<button class="dropdown-button">
-						<span>Features</span>
-						<img
-							src="images/icon-arrow-down.svg"
-							alt="arrow-down"
-							id="features-arrow"
-						/>
+		<div class="container">
+			<header class="navbar">
+				<div class="navbar-left">
+					<img src="images/logo.svg" alt="snap logo" class="logo" />
+					<div class="main-menu">
+						<div>
+							<button class="navbar-buttons dropdown-button">
+								<span>Features</span>
+								<img
+									src="images/icon-arrow-down.svg"
+									alt="arrow-down"
+									id="features-arrow"
+								/>
+							</button>
+						</div>
+						<div>
+							<button class="navbar-buttons dropdown-button">
+								<span>Company</span>
+								<img
+									src="images/icon-arrow-down.svg"
+									alt="arrow-down"
+									id="company-arrow"
+								/>
+							</button>
+						</div>
+						<div><a href="#" class="menu-links">Careers</a></div>
+						<div><a href="#" class="menu-links">About</a></div>
+					</div>
+				</div>
+				<div class="profile-access">
+					<button class="navbar-buttons login-button">Login</button>
+					<button class="navbar-buttons register-button">
+						Register
 					</button>
 				</div>
+			</header>
+
+			<section>
 				<div>
-					<button class="dropdown-button">
-						<span>Company</span>
-						<img
-							src="images/icon-arrow-down.svg"
-							alt="arrow-down"
-							id="company-arrow"
-						/>
-					</button>
+					<img
+						src="images/image-hero-desktop.png"
+						alt="hero picture"
+						class="hero-img"
+					/>
 				</div>
-				<div><a href="#" class="menu-links">Careers</a></div>
-				<div><a href="#" class="menu-links">About</a></div>
-			</div>
-			<div class="profile-access">
-				<button class="login-button">Login</button>
-				<button class="register-button">Register</button>
-			</div>
-		</header>
+				<div>
+					<h1>Make remote work</h1>
+					<p>
+						Get your team in sync, no matter your location.
+						Streamline processes, create team rituals, and watch
+						productivity soar.
+					</p>
+					<button>Learn more</button>
+				</div>
+				<div>
+					<img src="images/client-databiz.svg" alt="" />
+					<img src="images/client-audiophile.svg" alt="" />
+					<img src="images/client-meet.svg" alt="" />
+					<img src="images/client-maker.svg" alt="" />
+				</div>
+			</section>
 
-		<section>
-			<div>
-				<img src="images/image-hero-desktop.png" alt="hero picture" />
-			</div>
-			<div>
-				<h1>Make remote work</h1>
-				<p>
-					Get your team in sync, no matter your location. Streamline
-					processes, create team rituals, and watch productivity soar.
-				</p>
-				<button>Learn more</button>
-			</div>
-			<div>
-				<img src="images/client-databiz.svg" alt="" />
-				<img src="images/client-audiophile.svg" alt="" />
-				<img src="images/client-meet.svg" alt="" />
-				<img src="images/client-maker.svg" alt="" />
-			</div>
-		</section>
-
-		<footer class="attribution">
-			Challenge by
-			<a
-				href="https://www.frontendmentor.io?ref=challenge"
-				target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Anton</a>.
-		</footer>
+			<footer class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Anton</a>.
+			</footer>
+		</div>
 	</body>
 </html>
