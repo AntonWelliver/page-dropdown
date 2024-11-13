@@ -15,17 +15,35 @@
 		<title>Frontend Mentor | Intro section with dropdown navigation</title>
 	</head>
 	<body>
-		<header class="header">
+		<header class="navbar">
 			<img src="images/logo.svg" alt="snap logo" />
-			<ul>
-				<li>Features</li>
-				<li>Company</li>
-				<li>Careers</li>
-				<li>About</li>
-			</ul>
-			<div>
-				<div>Login</div>
-				<button>Register</button>
+			<div class="main-menu">
+				<div>
+					<button class="dropdown-button">
+						<span>Features</span>
+						<img
+							src="images/icon-arrow-down.svg"
+							alt="arrow-down"
+							id="features-arrow"
+						/>
+					</button>
+				</div>
+				<div>
+					<button class="dropdown-button">
+						<span>Company</span>
+						<img
+							src="images/icon-arrow-down.svg"
+							alt="arrow-down"
+							id="company-arrow"
+						/>
+					</button>
+				</div>
+				<div><a href="#" class="menu-links">Careers</a></div>
+				<div><a href="#" class="menu-links">About</a></div>
+			</div>
+			<div class="profile-access">
+				<button class="login-button">Login</button>
+				<button class="register-button">Register</button>
 			</div>
 		</header>
 
