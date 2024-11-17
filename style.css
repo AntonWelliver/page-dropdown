@@ -12,6 +12,7 @@
 
 body {
 	font-family: 'Epilogue', sans-serif;
+	font-weight: 500;
 	background-color: var(--almost-white);
 }
 
@@ -30,23 +31,45 @@ img {
 	cursor: pointer;
 }
 
+a:hover,
+.navbar-buttons:hover {
+	color: var(--almost-black);
+}
+
 .dropdown-button {
 	font-size: 14px;
 	line-height: 1.28;
+	font-family: inherit;
+	font-weight: inherit;
 }
 
 .login-button {
 	font-size: 14px;
 	line-height: 1.28;
+	font-family: inherit;
+	font-weight: inherit;
 }
+
 .register-button {
 	font-size: 14px;
 	line-height: 1.28;
+	background: transparent;
+	font-family: inherit;
+	font-weight: inherit;
+	padding: 13px 23px;
+	border-radius: 14px;
+	border: 1.5px solid var(--almost-black);
 }
 
 .menu-links {
 	font-size: 14px;
 	line-height: 1.28;
+}
+
+.dropdown-button,
+.login-button {
+	border: none;
+	background: transparent;
 }
 
 .container {
