@@ -56,6 +56,7 @@ a:hover,
 	left: -75px;
 	background: white;
 	border-radius: 10px;
+	display: none;
 }
 
 .features-dropdown li {
@@ -137,4 +138,72 @@ a:hover,
 	justify-content: space-evenly;
 	gap: 40px;
 	padding-right: 40px;
+}
+
+.page-container {
+	display: flex;
+	gap: 125px;
+	margin-top: 67px;
+}
+
+.main-content-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 540px;
+	justify-content: flex-end;
+	margin-left: 165px;
+}
+
+.main-content {
+	margin-bottom: 108px;
+}
+
+.main-content h1 {
+	font-weight: bold;
+	font-size: 80px;
+	line-height: 1;
+	margin-bottom: 48px;
+}
+
+.main-content p {
+	color: var(--medium-gray);
+	font-size: 18px;
+	line-height: 1.55;
+	max-width: 445px;
+	margin-bottom: 51px;
+}
+
+.learn-more-button {
+	background-color: var(--almost-black);
+	color: var(--almost-white);
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.55;
+	border-radius: 15px;
+	padding: 15px 28px 13px 31px;
+	border: none;
+	font-family: inherit;
+}
+
+.product-list {
+	display: flex;
+	max-width: 478px;
+	max-height: 36px;
+	gap: 40px;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+}
+
+.product-list img {
+	max-width: 113px;
+}
+
+.desktop-img {
+	max-width: 480px;
+	max-height: 640px;
+}
+
+.desktop-img img {
+	width: 100%;
 }
