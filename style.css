@@ -62,25 +62,35 @@ a:hover,
 	padding: 24px;
 	padding-bottom: 8px;
 	position: absolute;
-	top: 35px;
-	left: -75px;
+	top: -10px;
+	left: -52px;
 	background: white;
 	border-radius: 10px;
 	transform: scale(0.5);
-	display: block;
+	display: none;
 }
 
-/* .features-dropdown-open {
+.features-dropdown-open {
 	border: 1px solid black;
 	padding: 24px;
 	padding-bottom: 8px;
 	position: absolute;
 	top: 35px;
-	left: -75px;
+	left: -93px;
 	background: white;
 	border-radius: 10px;
 	transform: scale(1);
 	display: block;
+}
+
+/* .test-div {
+	border: solid 1px black;
+	width: 167px;
+	height: 180px;
+	border-radius: 10px;
+	position: absolute;
+	top: 35px;
+	left: -93px;
 } */
 
 .features-dropdown li {
