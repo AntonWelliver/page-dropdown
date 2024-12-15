@@ -50,7 +50,7 @@ a:hover,
 .dropdown-button img {
 	width: 8px;
 	height: 4px;
-	transition: all 1s ease-out;
+	transition: all 0.2s ease-out;
 }
 
 .rotate-arrow {
@@ -67,6 +67,7 @@ a:hover,
 	background: white;
 	border-radius: 10px;
 	transform: scale(0.5);
+	transition: all 0.3s ease-out;
 	display: none;
 }
 
