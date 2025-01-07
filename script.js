@@ -9,7 +9,6 @@ featuresDropdownBtn.addEventListener('click', handleFeaturesBtn);
 featuresDropdownList.forEach((feature) => {
 	feature.addEventListener('click', featureDropdownClose);
 });
-/* document.body.addEventListener('click', featureDropdownClose); */
 
 let featuresBtnSelected = false;
 
@@ -35,7 +34,50 @@ function featureDropdownClose() {
 function handleFeaturesBtn() {
 	if (featuresBtnSelected == false) {
 		featureDropdownOpen();
+		companyDropdownClose();
 	} else {
 		featureDropdownClose();
+	}
+}
+
+const companyArrow = document.querySelector('#company-arrow');
+const companyDropdownBtn = document.querySelector('#company-dropdown-btn');
+const companyDropdown = document.querySelector('#company-dropdown');
+const companyDropdownList = document.querySelectorAll(
+	'#company-dropdown ul li a'
+);
+
+companyDropdownBtn.addEventListener('click', handleCompanyBtn);
+companyDropdownList.forEach((company) => {
+	company.addEventListener('click', companyDropdownClose);
+});
+
+let companyBtnSelected = false;
+
+function companyDropdownOpen() {
+	companyBtnSelected = true;
+	companyArrow.classList.add('rotate-arrow');
+	companyDropdown.classList.add('company-dropdown');
+	companyDropdown.style.display = 'block';
+
+	setTimeout(() => {
+		companyDropdown.classList.add('company-dropdown-open');
+	}, 10);
+}
+
+function companyDropdownClose() {
+	companyBtnSelected = false;
+	companyArrow.classList.remove('rotate-arrow');
+	companyDropdown.classList.remove('company-dropdown');
+	companyDropdown.style.display = 'none';
+	companyDropdown.classList.remove('company-dropdown-open');
+}
+
+function handleCompanyBtn() {
+	if (companyBtnSelected == false) {
+		companyDropdownOpen();
+		featureDropdownClose();
+	} else {
+		companyDropdownClose();
 	}
 }
