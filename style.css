@@ -88,6 +88,11 @@ a:hover,
 	display: block;
 }
 
+.features-dropdown-open a {
+	font-size: 14px;
+	line-height: 16px;
+}
+
 .features-dropdown li {
 	margin-bottom: 16px;
 }
@@ -120,6 +125,11 @@ a:hover,
 	border-radius: 10px;
 	transform: scale(1);
 	display: block;
+}
+
+.company-dropdown-open a {
+	font-size: 14px;
+	line-height: 16px;
 }
 
 .company-dropdown li {
@@ -159,6 +169,7 @@ a:hover,
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 1rem;
+	/* border: 1px solid black; */
 }
 
 .navbar {
@@ -171,8 +182,8 @@ a:hover,
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-left: 41.26px;
-	gap: 62.24px;
+	padding-left: 40px;
+	gap: 60px;
 }
 
 .main-menu {
@@ -202,8 +213,12 @@ a:hover,
 .page-container {
 	display: flex;
 	gap: 125px;
+	justify-content: space-between;
 	margin-top: 67px;
-	padding-bottom: 102px;
+	padding-left: 165px;
+	padding-right: 130px;
+	padding-bottom: 90px;
+	/* border: 1px solid black; */
 }
 
 .main-content-container {
@@ -211,8 +226,8 @@ a:hover,
 	flex-direction: column;
 	max-width: 540px;
 	justify-content: flex-end;
-	margin-left: 165px;
-	border: 1px solid black;
+	/* margin-left: 165px; */
+	/* border: 1px solid black; */
 	flex-basis: 60%;
 }
 
@@ -250,16 +265,17 @@ a:hover,
 
 .product-list {
 	display: flex;
+	flex-wrap: wrap;
 	max-width: 478px;
 	max-height: 36px;
 	gap: 40px;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
 	margin-right: auto;
 }
 
 .product-list img {
-	max-width: 113px;
+	max-width: 111px;
 }
 
 .desktop-img {
@@ -270,28 +286,60 @@ a:hover,
 
 .desktop-img img {
 	width: 100%;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
 .mobile-img {
 	max-width: 480px;
 	max-height: 640px;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	display: none;
 }
 
 .mobile-img img {
 	width: 600px;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
 @media (max-width: 1236px) {
 	.page-container {
-		gap: 80px;
+		gap: 70px;
+		padding-left: 104px;
+		padding-right: 100px;
+	}
+	.product-list img {
+		max-width: 70px;
+	}
+	.main-content h1 {
+		font-size: 70px;
+		line-height: 1;
 	}
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1100px) {
+	.navbar-left {
+		padding-left: 25px;
+		gap: 40px;
+	}
+
+	.main-menu {
+		gap: 30px;
+	}
+
+	.profile-access {
+		padding-right: 25px;
+	}
+
+	.page-container {
+		gap: 65px;
+		padding-left: 85px;
+		padding-right: 65px;
+		padding-bottom: 90px;
+		/* border: 1px solid black; */
+	}
+}
+
+@media (max-width: 768px) {
 	.main-menu {
 		display: none;
 	}
